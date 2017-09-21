@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="fevicon" href="http://is4.mzstatic.com/image/thumb/Purple117/v4/cc/d8/0c/ccd80ca1-a0fb-3328-afbf-f36edf41c793/source/350x350bb.jpg">
+  <title>contact form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+  <link rel="stylesheet" href="../public/css/style.css">
+</head>
+<body>
+	<div class="container">
+		<h1 class="brand"><span>nJ</span>store</h1>
+		<div class="wrapper">
+			<div class="company-info">
+				<h3>nJstore</h3>
+				<ul>
+					<li><i class="fa fa-road" aria-hidden="true"></i>&nbsp;6-199/2</li>
+					<li><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;8989898989</li>
+					<li><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;nJstore@gmail.com</li>
+				</ul>
+			</div>
+			<div class="contact">
+				<h3>Email us</h3>
+				{{msg}}
+				<div class="alert">your message has been sent</div>
+				<!-- Todo validation  -->
+				<form action="send" method="POST" id="myform">
+					<p>
+						<label for="">Name</label>
+						<input type="text" required id="name" name="name">
+					</p>
+					<p>
+						<label for="">Company</label>
+						<input type="text" required id="company" name="company">
+					</p>
+					<p>
+						<label for="">Email Addrss</label>
+						<input type="email" required id="email" name="email">
+					</p>
+					<p>
+						<label for="">Phone Number</label>
+						<input type="text" id="phone" name="phone">
+					</p>
+					<p class="full">
+						<label for="">Message</label>
+						<textarea name="message" id="message" rows="5"></textarea>
+					</p>
+					<p class="full">
+						<button type="submit">submit</button>
+					</p>
+				</form>
+			</div>
+		</div>
+	</div>
+<script src="https://use.fontawesome.com/6c81a13623.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script src="./main.js"></script> -->
+</body>
+</html>
